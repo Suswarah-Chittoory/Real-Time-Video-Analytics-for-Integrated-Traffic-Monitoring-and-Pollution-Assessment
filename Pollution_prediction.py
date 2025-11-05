@@ -13,7 +13,7 @@ st.sidebar.title('User Inputs')
 
 # File uploader
 video_file = st.sidebar.file_uploader('Upload a video file', type=['mp4', 'avi'])
-
+# Additional sidebar inputs can be added here
 # Select box for model selection
 model_option = st.sidebar.selectbox(
     'Choose a Model',
