@@ -19,7 +19,7 @@ model_option = st.sidebar.selectbox(
     'Choose a Model',
     ('Vehicle Detection', 'Pollution Prediction')
 )
-
+# Additional select box for pollution prediction
 # Slider for setting confidence threshold
 confidence_threshold = st.sidebar.slider(
     'Confidence Threshold', 0.0, 1.0, 0.5
