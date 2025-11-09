@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>YONEX MAVIS 350 Nylon Shuttle Feedback</h1><br>
+        <b>Your Review:</b>
+        <class="result">{{ review }}
+        {% if prediction == 1 %}
+            <div class="result positive-feedback">Thanks for your positive feedback... Buy again!!!</div>
+        {% else %}
+            <div class="result negative-feedback">Sorry for the bad experience...</div>
+        {% endif %}
+    </div>
+</body>
+</html>

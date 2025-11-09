@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YONEX MAVIS 350 Nylon Shuttle</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback on YONEX MAVIS 350 Nylon Shuttle</h1>
+        <form action="/prediction" method="post">
+            <div class="form-group">
+                <textarea id="review" name="Review" placeholder="Please give your review..." rows="5" cols = "20" style="resize: none;" autocomplete="off"></textarea>
+            </div>
+            <div class="button-container">
+                <button type="submit">Predict</button>
+            </div>
+            <div allign="left" class="error-message"><br />{{ prediction }}</div>
+        </form>
+    </div>
+</body>
+</html>
